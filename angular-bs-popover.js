@@ -21,7 +21,7 @@ angular.module('angular-bs-popover', [])
 						placement: $scope.popoverPosition || 'top',
 						container: $scope.popoverContainer || null,
 						trigger: $scope.popoverTrigger || 'hover',
-						html: $scope.popoverHtml || false,
+						html: $scope.popoverHtml ? true : false,
 						animation: false
 					});
 
